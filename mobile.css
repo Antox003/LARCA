@@ -624,7 +624,7 @@ padding-left: 1rem;
 
 .container-main p{
   color: white;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .container-poesie{
@@ -636,6 +636,7 @@ padding-left: 1rem;
 .container-poesie .poesia{
   width: 90%;
   margin: 10px;
+  font-size: 20px;
 }
 
 /*FOOTER*/
