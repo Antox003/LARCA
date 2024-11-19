@@ -1,0 +1,1204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+  
+/*Navbar*/
+nav{
+  background: #333;
+  height: 80px;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.1rem;
+}
+
+label.logo{
+  color: white;
+  font-size: 60px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 10px 30px;
+  color: orange;
+  text-align: center;
+  line-height: 50px;
+}
+
+.menu li.current{
+  color: white;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,.menu li:hover{
+  background: #555;
+  color: white;
+  border-radius: 10px;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+/*Video*/
+/*Title*/
+#video-gallery{
+  background: url('./LARCA/background/background-video_gallery.webp') no-repeat top center/cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+}
+
+#video-gallery .title{
+  color: white;
+  background: black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: auto;
+  border-radius: 10px;
+  text-align: center;
+  }
+  
+  .title .color{
+    color: orange;
+  }
+
+  /*Video spettacoli*/
+  #subfooter2 h1{
+  color: orange;
+  font-size: 60px;
+  background: #333;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3px;
+  }
+  
+  #spettacoli{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkred;
+    height: auto;
+  }
+  
+  .container-spettacoli{
+    position: relative;
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  
+  .container-spettacoli .card{
+    max-width: 300px;
+    height: 215px;
+    background: beige;
+    margin: 30px 10px ;
+    padding: 20px 15px ;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out ;
+    border-radius: 10px;
+  }
+  
+  .container-spettacoli .card:hover{
+    height: 400px;
+  }
+  
+  .container-spettacoli .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 150px;
+    top: -60px;
+    left: 20px;
+  }
+  
+  .container-spettacoli .card .imgBx img{
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .container-spettacoli .card .paragrafo{
+    position: relative;
+    margin-top: -140px;
+    padding: 60px 15px;
+    text-align: center;
+    color: darkred;
+    font-size: 18px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .container-spettacoli .card .paragrafo a {
+    color: darkred;
+  }
+  
+  .container-spettacoli .card .paragrafo a:hover{
+    color: orange;
+  }
+
+  .container-spettacoli .card:hover .paragrafo{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s ;
+  }
+  
+  .container-spettacoli .card .paragrafo .color{
+    color: orange;
+  }
+  
+  
+  /*BACKSTAGE*/
+  #backstage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkred;
+    height: auto;
+  }
+  
+  .container-backstage{
+    position: relative;
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  
+  .container-backstage .card{
+    max-width: 300px;
+    height: 215px;
+    background: beige;
+    margin: 30px 10px ;
+    padding: 20px 15px ;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out ;
+    border-radius: 10px;
+  }
+  
+  .container-backstage .card:hover{
+    height: 400px;
+  }
+  
+  .container-backstage .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 150px;
+    top: -60px;
+    left: 20px;
+  }
+  
+  .container-backstage .card .imgBx img{
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .container-backstage .card .paragrafo{
+    position: relative;
+    margin-top: -140px;
+    padding: 60px 15px;
+    text-align: center;
+    color: darkred;
+    font-size: 18px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .container-backstage .card .paragrafo a {
+    color: darkred;
+  }
+
+  .container-backstage .card .paragrafo a:hover{
+    color: orange;
+  }
+
+  .container-backstage .card:hover .paragrafo{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s ;
+  }
+  
+  
+  /*Fortuna con la effe maiuscola*/
+  #fortuna{
+    background: url('./LARCA/background/background-video.webp');
+    height: auto;
+  }
+
+  #fortuna .container{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  #fortuna .title{
+    color: white;
+    background: black;
+    width: auto;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  #fortuna .title .color{
+    color: orange;
+  }
+  
+  #fortuna .video{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+  
+  #info {
+    height: auto;
+    background: darkred;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  #info .data-ora h2{
+    font-size: 50px;
+    color: orange;
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+  
+  #info .data-ora p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  #trama-fortuna{
+    background: darkred;
+    height: auto;
+  }
+  
+  #trama-fortuna .trama h2{
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+  padding-top: 1.5rem;
+  }
+  
+  #trama-fortuna .trama p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  #info .locandina-effe h2{
+   text-align: center;
+   color: orange;
+   font-size: 50px;
+   padding-top: 1.5rem;
+  }
+  
+  #info .locandina-effe img{
+  max-width: 65%;
+  display: block;
+  margin:0 auto;
+  }
+  
+  /*SE QUESTO E' EDUARDO*/
+  #eduardo{
+    background: url('./LARCA/background/background-video.webp');
+    height: auto;
+  }
+  
+  #eduardo .container{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+    
+  #eduardo .title{
+    color: white;
+    background: black;
+    width: auto;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+#eduardo .title .color{
+  color: orange;
+}
+  
+#eduardo .video{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+#trama-eduardo{
+    height: auto;
+    background: darkred   ;
+}
+
+#trama-eduardo .trama h2{
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+    
+#trama-eduardo .trama p{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+  
+  #info2 {
+    height: auto;
+    background: darkred;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+  }
+  
+  #info2 .data-ora h2{
+    font-size: 50px;
+    color: orange;
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+  
+  #info2 .data-ora p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  #info2 .locandina-eduardo h2{
+   text-align: center;
+   color: orange;
+   font-size: 50px;
+   padding-top: 1.5rem;
+  }
+  
+  #info2 .locandina-eduardo img{
+  max-width: 80%;
+  display: block;
+  margin:0 auto;
+  }
+  
+/*SCARFALIETTO 1*/
+#scarfalietto{
+  background: url('./LARCA/background/background-video.webp');
+  height: auto;
+}
+
+#scarfalietto .container{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+  
+#scarfalietto .title{
+  color: white;
+  background: black;
+  width: auto;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+  
+  #scarfalietto .title .color{
+    color: orange;
+  }
+  
+  #scarfalietto .video{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+  
+
+  #trama-scarfalietto1{
+    height: auto;
+    background: darkred   ;
+}
+
+#trama-scarfalietto1 .trama h2{
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+  
+#trama-scarfalietto1 .trama p{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+  
+#info3 {
+  height: auto;
+  background: darkred;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+}
+  
+  #info3 .data-ora h2{
+    font-size: 50px;
+    color: orange;
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+  
+  #info3 .data-ora p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  #info3 .locandina-scarfalietto1 h2{
+   text-align: center;
+   color: orange;
+   font-size: 50px;
+   padding-top: 1.5rem;
+  }
+  
+  #info3 .locandina-scarfalietto1 img{
+  max-width: 80%;
+  display: block;
+  margin:0 auto;
+  }
+  
+  /*A CHE SERVONO QUESTI QUATTRINI*/
+  #quattrini{
+    background: url('./LARCA/background/background-video.webp');
+    height: auto;
+  }
+  
+  #quattrini .container{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+    
+  #quattrini .title{
+    color: white;
+    background: black;
+    width: auto;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #quattrini .title .color{
+    color: orange;
+  }
+  
+  #quattrini .video{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+  
+  #info4 {
+    height: auto;
+    background: darkred;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+#trama-quattrini{
+  height: auto;
+  background: darkred;
+}
+
+#trama-quattrini .trama h2{
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+  padding-top: 1.5rem;
+  }
+  
+  #trama-quattrini .trama p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #info4 .data-ora h2{
+    font-size: 50px;
+    color: orange;
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+  
+  #info4 .data-ora p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #info4 .locandina-eduardo h2{
+   text-align: center;
+   color: orange;
+   font-size: 50px;
+   padding-top: 3rem;
+   padding-bottom: 2rem;
+  }
+  
+  #info4 .locandina-eduardo img{
+  max-width: 80%;
+  display: block;
+  margin:0 auto;
+  }
+  
+  /*DOJE MARITE MBRUGLUNE*/
+  #marite{
+    background: url('./LARCA/background/background-video.webp');
+    height: auto;
+  }
+  
+  #marite .container{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+    
+  #marite .title{
+    color: white;
+    background: black;
+    width: auto;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  #marite .title .color{
+    color: orange;
+  }
+  
+  #marite .video{
+    display: flex;
+    justify-content: center;
+  }
+
+  #info5 {
+    height: auto;
+    background: darkred;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+#trama-marite{
+  background: darkred;
+  height: auto;
+}
+
+#trama-marite .trama h2{
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+  padding-top: 1.5rem;
+ }
+    
+#trama-marite .trama p{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+  
+#info5 .data-ora h2{
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+    
+#info5 .data-ora p{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+  
+#info5 .locandina-marite h2{
+  text-align: center;
+  color: orange;
+  font-size: 50px;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+  
+#info5 .locandina-marite img{
+max-width: 80%;
+display: block;
+margin:0 auto; 
+}
+  
+/*SCARFALIETTO 2*/
+#scarfalietto2{
+  background: url('./LARCA/background/background-video.webp');
+  height: auto;
+}
+  
+#scarfalietto2 .container{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+    
+  #scarfalietto2 .title{
+    color: white;
+    background: black;
+    width: auto;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  #scarfalietto2 .title .color{
+    color: orange;
+  }
+  
+  #scarfalietto2 .video{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+
+#trama-scarfalietto2{
+  height: auto;
+  background: darkred;
+}
+
+#trama-scarfalietto2 .trama h2{
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+  padding-top: 1.5rem;
+  }
+  
+  #trama-scarfalietto2 .trama p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  #info6 {
+    height: auto;
+    background: darkred;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+  }
+  
+  #info6 .data-ora h2{
+    font-size: 50px;
+    color: orange;
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+  
+  #info6 .data-ora p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  #info6 .locandina-scarfalietto2 h2{
+   text-align: center;
+   color: orange;
+   font-size: 50px;
+   padding-top: 1.5rem;
+  }
+  
+  #info6 .locandina-scarfalietto2 img{
+  max-width: 50%;
+  display: block;
+  margin: auto;
+  }
+  
+/*Tre pecore viziose*/
+#pecore{
+  background: url('./LARCA/background/background-video.webp');
+  height: auto;
+}
+
+#pecore .container{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+  
+#pecore .title{
+  color: white;
+  background: black;
+  width: auto;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#pecore .title .color{
+  color: orange;
+}
+
+#pecore .subtitle{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+#pecore .subtitle h3{
+  color: white;
+  font-size: 40px;
+  background: #333;
+  width: 500px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#trama-pecore{
+  height: auto;
+  background: darkred;
+  padding-bottom: 10rem;
+}
+
+#trama-pecore .trama h2{
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+  
+#trama-pecore .trama p{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+/*ministro video*/
+#ministro{
+  background: url('./LARCA/background/background-video.webp');
+  height: auto;
+}
+
+#ministro .container{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+  
+#ministro .title{
+  color: white;
+  background: black;
+  width: auto;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#ministro .title .color{
+  color: orange;
+}
+
+#ministro .subtitle{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+#ministro .subtitle h3{
+  color: white;
+  font-size: 40px;
+  background: #333;
+  width: 500px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#trama-ministro{
+  height: auto;
+  background: darkred;
+  padding-bottom: 2rem;
+}
+
+#trama-ministro .trama h2{
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+  
+#trama-ministro .trama p{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+/*sinneco video*/
+#sinneco{
+  background: url('./LARCA/background/background-video.webp');
+  height: auto;
+}
+
+#sinneco .container{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+  
+#sinneco .title{
+  color: white;
+  background: black;
+  width: auto;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#sinneco .title .color{
+  color: orange;
+}
+
+#sinneco .subtitle{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+#sinneco .subtitle h3{
+  color: white;
+  font-size: 40px;
+  background: #333;
+  width: 500px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#trama-sinneco{
+  height: auto;
+  background: darkred;
+  padding-bottom: 5rem;
+}
+
+#trama-sinneco .trama h2{
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+  
+#trama-sinneco .trama p{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+/*lettere video*/
+#lettere{
+  background: url('./LARCA/background/background-video.webp');
+  height: 100vh;
+}
+
+#lettere .container{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+  
+#lettere .title{
+  color: white;
+  background: black;
+  width: auto;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#lettere .title .color{
+  color: orange;
+}
+
+#lettere .subtitle{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+#lettere .subtitle h3{
+  color: white;
+  font-size: 40px;
+  background: #333;
+  width: 500px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/*SCUSE SAVERIO*/
+#scuse{
+  background: url('./LARCA/background/background-video.webp');
+  height: 100vh;
+}
+
+#scuse .container{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+  
+#scuse .title{
+  color: white;
+  background: black;
+  width: auto;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#scuse .title .color{
+  color: orange;
+}
+
+#scuse .video{
+  display: flex;
+  justify-content: center;
+}
+
+#scuse-saverio{
+  background: darkred;
+}
+
+#scuse-saverio .trama h2{
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+  
+#scuse-saverio .trama p{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+#scuse-saverio .trama p a{
+  color: orange;
+}
+
+/*BACKSTAGE DOJE MARITE MBRUGLUNE*/
+#backstage-marite{
+  background: url('./LARCA/background/background-video.webp');
+  height: auto;
+}
+
+#backstage-marite .container{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+  
+#backstage-marite .title{
+  color: white;
+  background: black;
+  width: auto;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+} 
+
+#backstage-marite .video{
+  display: flex;
+  justify-content: center;
+}
+
+#info .trama h2{
+  font-size: 50px;
+  color: orange;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+  
+#info .trama p{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+#info .trama p a{
+  color: orange;
+}
+
+
+
+/*Footer*/
+#footer{
+  height: auto;
+  background: #333;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:  wrap;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+#footer h3{
+  color: orange;
+}
+
+.contatti h3{
+  padding-left: 70px;
+  padding-top: 10px;
+}
+
+.contatti{
+  font-size: 20px;
+}
+
+.contatti p{
+  padding-left: 25px;
+}
+
+.contatti p a{
+  color: white;
+}
+
+.contatti p a:hover{
+  color: orange;
+  transform: scale(1.1);
+}
+
+.contatti img{
+  max-width: 45px;
+}
+
+.contatti .facebook{
+  display: flex;
+  align-items: center;
+}
+
+.contatti .facebook a{
+  padding-left: 1rem;
+  color: white;
+}
+
+.contatti .facebook a:hover{
+  color: orange;
+  transform: scale(1.1);
+}
+
+.dedica {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 23px;
+  padding-top: 3rem;
+}
+
+.dedica .color{
+  color: orange;
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  font-size: 23px;
+}
+
+.sviluppo{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: orange;
+  font-size: 23px;
+}

@@ -1,0 +1,1229 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html .body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*NAVBAR*/
+nav{
+  background: #333;
+  height: 80px;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.1rem;
+}
+
+label.logo{
+  color: white;
+  font-size: 60px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 10px 30px;
+  color: orange;
+  text-align: center;
+  line-height: 50px;
+}
+
+.menu li.current{
+  color: white;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+nav a.active,.menu li:hover{
+  background: #555;
+  color: white;
+  border-radius: 10px;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+/*Home*/
+/* Section1 */
+#showcase .container{
+  background: url('./LARCA/background/home-background.webp') center center/cover ;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+#showcase .container .color{
+  color: white;
+}
+
+#showcase .container h1{
+  color: orange;
+  background: black;
+  width: auto;
+  border-radius: 10px;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/*Section2*/
+#news{
+  background: darkred;
+  height: auto;
+}
+
+#news .container{
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; 
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.container .card{
+  background: beige;
+  width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.7s ease;
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+}
+
+.container .card:hover{
+  transform: scale(1.1);
+}
+
+#news .card a:hover{
+  color: orange;
+}
+
+
+#news .card a{
+  margin: 0.5rem;
+  font-size: 25px;
+  color: darkred;
+  text-align: center;
+}
+
+#news .card p{
+  margin: 1rem;
+  font-size: 20px;
+  color: darkred;
+  text-align: center;
+}
+
+/*Section3*/
+#sito{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: darkred;
+  height: auto;
+}
+
+.altro{
+  position: relative;
+  width: 1450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.altro .box{
+  width: 335px;
+  height: 500px;
+  background: beige;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.7s ease;
+  border-radius: 10px;
+  margin-left: 1.7rem;
+  margin-bottom: 2.5rem;
+}
+
+.box img{
+  max-width: 100%;
+  height: 240px;
+  width: 400px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.box a{
+  text-align: center;
+  color: darkred;
+  margin: 1rem;
+  font-size: 25px;
+  transition: 0.2s ease;
+}
+
+.box a:hover{
+  color: orange;
+  transform: scale(1.1);
+  transition: 0.2s ease;
+}
+
+.box p{
+  color: darkred;
+  margin: 1rem;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+.box:hover{
+  transform: scale(1.1);
+}
+
+/*Storia*/
+/*Section1*/
+#storia .container{
+  background: darkred;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#storia .container .sinistra h1{
+  font-size: 50px;
+  color: white;
+  margin-left: 6px;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+#storia .container .sinistra .color{
+  color: orange;
+}
+
+#storia .container .sinistra p{
+  font-size: 30px;
+  margin-top: 1.5rem;
+  max-width: 1000px;
+  padding-bottom: 1rem;
+  color: white;
+  text-align: center;
+}
+
+/*Section2*/
+#storia2 .container2 {
+  background: rgb(87, 86, 86);
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+}
+
+#storia2 .container2 .sinistra2 img{
+  max-width: 100%;
+}
+
+#storia2 .container2 .destra2 h1 {
+  font-size: 45px;
+  margin-top: 3rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+#storia2 .container2 .destra2 .color {
+  color: orange;
+  margin-left: 1.5rem;
+}
+
+#storia2 .container2 .destra2 .color2 {
+  color: orange;
+}
+
+#storia2 .container2 .destra2 ul {
+  font-size: 30px;
+  color: white;
+  margin-left: 1.5rem;
+}
+
+#storia2 .container2 .destra2 a{
+  color: white;
+}
+
+#storia2 .container2 .destra2 a:hover{
+  color: orange;
+}
+
+/*LOCANDINE*/
+#locandine-background{
+  background: url('./LARCA/background/locandine-2.webp') no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+}
+
+#locandine-background .title h1{
+  color: orange;
+  background: black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/*Section2 locandine*/
+#locandine{
+  background: darkred;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: auto;
+}
+
+#locandine #locandina-1 .locandina-title{
+  color: white;
+  font-size: 30px;
+  width: 350px;
+  text-align: center;
+  background: #333;
+  border-radius: 10px;
+}
+
+#locandine #locandina-1 .container-title{
+  display: flex;
+  justify-content: center;
+}
+
+#locandine #locandina-1 .container-title .locandina-title .color{
+  color: orange;
+}
+
+#locandine #locandina-1 .locandina-a img{
+  max-width: 400px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#locandine #locandina-2 .locandina-title{
+  color: white;
+  font-size: 30px;
+  width: 350px;
+  text-align: center;
+  background: #333;
+  border-radius: 10px;
+}
+
+#locandine #locandina-2 .container-title{
+  display: flex;
+  justify-content: center;
+}
+
+#locandine #locandina-2 .locandina-b img{
+  max-width: 400px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#locandine #locandina-3 .locandina-title{
+  color: white;
+  font-size: 30px;
+  width: 350px;
+  text-align: center;
+  background: #333;
+  border-radius: 10px;
+}
+
+#locandine #locandina-3 .container-title{
+  display: flex;
+  justify-content: center;
+}
+
+#locandine #locandina-3 .locandina-c img{
+  max-width: 400px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*Rassegna Stampa*/
+#rassegna {
+  background: url('./LARCA/background/rassegna\ stampa\ background.webp') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+
+#rassegna .title{
+  color: white;
+  background: black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#rassegna .title .color{
+  color: orange;
+}
+
+#giornali{
+  background: darkred;
+  height: 100vh;
+}
+
+#giornali{
+  background: darkred;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: auto;
+}
+
+#giornali #giornale-1 .giornale-title{
+  color: white;
+  font-size: 30px;
+  width: 250px;
+  text-align: center;
+  background: #333;
+  border-radius: 10px;
+}
+
+#giornali #giornale-1 .container-title{
+  display: flex;
+  justify-content: center;
+}
+
+#giornali #giornale-1 .giornale-a img{
+  max-width: 500px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#giornali #giornale-2 .giornale-title{
+  color: white;
+  font-size: 30px;
+  width: 370px;
+  text-align: center;
+  background: #333;
+  border-radius: 10px;
+}
+
+#giornali #giornale-2 .container-title{
+  display: flex;
+  justify-content: center;
+}
+
+#giornali #giornale-2 .giornale-b img{
+  max-width: 600px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#giornali #giornale-3 .giornale-title{
+  color: white;
+  font-size: 30px;
+  width: 400px;
+  text-align: center;
+  background: #333;
+  border-radius: 10px;
+}
+
+#giornali #giornale-3 .container-title{
+  display: flex;
+  justify-content: center;
+}
+
+#giornali #giornale-3 .giornale-c img{
+  max-width: 500px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#giornali #giornale-4 .giornale-title{
+  color: white;
+  font-size: 30px;
+  width: 250px;
+  text-align: center;
+  background: #333;
+  border-radius: 10px;
+}
+
+#giornali #giornale-4 .container-title{
+  display: flex;
+  justify-content: center;
+}
+
+#giornali #giornale-4 .giornale-d img{
+  max-width: 500px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#giornali #giornale-5 .giornale-title{
+  color: white;
+  font-size: 30px;
+  width: 250px;
+  text-align: center;
+  background: #333;
+  border-radius: 10px;
+}
+
+#giornali #giornale-5 .container-title{
+  display: flex;
+  justify-content: center;
+}
+
+#giornali #giornale-5 .giornale-e img{
+  max-width: 500px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#giornali #giornale-6 .giornale-title{
+  color: white;
+  font-size: 30px;
+  width: 250px;
+  text-align: center;
+  background: #333;
+  border-radius: 10px;
+}
+
+#giornali #giornale-6 .container-title{
+  display: flex;
+  justify-content: center;
+}
+
+#giornali #giornale-6 .giornale-f img{
+  max-width: 500px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*MATERIALE TECNICO*/
+#materiale{
+  background:url('./LARCA/background/materiale-tecnico-background.webp') no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+
+#materiale .title {
+  color: orange;
+  background: black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#materiale .title .color{
+  color: orange;
+}
+
+#materiale .title h1{
+  color: white;
+  background: black;
+  width: 700px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#box-tecnico{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: darkred;
+  height: auto;
+}
+
+#box-tecnico .altro{
+  position: relative;
+  width: 1300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; 
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.altro .box{
+  width: 335px;
+  height: 500px;
+  background: beige;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.7s ease;
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+}
+
+.altro .box .color{
+color: orange;
+}
+
+.box img{
+  max-width: 100%;
+  height: 240px;
+  width: 400px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.box a{
+  text-align: center;
+  color: darkred;
+  margin: 1rem;
+  font-size: 25px;
+}
+
+.box p{
+  color: darkred;
+  margin: 1rem;
+  text-align: center;
+  font-size: 20px;
+}
+
+.box:hover{
+  transform: scale(1.1);
+}
+
+
+/*Tecnico Vario*/
+#tecnico{
+  background: darkred;
+  height: auto;
+}
+
+#tecnico{
+  background: darkred;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: auto;
+}
+
+#tecnico #tecnico-1 .tecnico-title{
+  color: white;
+  font-size: 30px;
+  width: 300px;
+  text-align: center;
+  background: #333;
+  border-radius: 10px;
+  margin-left: 7rem;
+}
+
+#tecnico #tecnico-1 .tecnico-a img{
+  max-width: 500px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#tecnico #tecnico-2 .tecnico-title{
+  color: white;
+  font-size: 30px;
+  width: 350px;
+  text-align: center;
+  background: #333;
+  border-radius: 10px;
+  padding-top: 1rem;
+}
+
+#tecnico #tecnico-2 .tecnico-b img{
+  max-width: 500px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#tecnico #tecnico-3 .tecnico-title{
+  color: white;
+  font-size: 30px;
+  width: 400px;
+  text-align: center;
+  background: #333;
+  border-radius: 10px;
+  padding-top: 1rem;
+}
+
+#tecnico #tecnico-3 .tecnico-c img{
+  max-width: 500px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#tecnico #tecnico-4 .tecnico-title{
+  color: white;
+  font-size: 30px;
+  width: 400px;
+  text-align: center;
+  background: #333;
+  border-radius: 10px;
+  padding-top: 1rem;
+}
+
+#tecnico #tecnico-4 .tecnico-d img{
+  max-width: 500px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*Tecnico Fortuna (Scenografie)*/
+#scenografie-fortuna{
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  height: auto;
+  background: darkred;
+}
+
+#scenografie-fortuna .title{
+  color: white;
+  font-size: 40px;
+}
+
+#scenografie-fortuna .title{
+  text-align: center;
+}
+
+#scenografie-fortuna .title .color{
+  color: orange;
+}
+
+#tecnico-fortuna{
+  background: darkred;
+  height: auto;
+}
+
+#tecnico-fortuna{
+  background: darkred;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: auto;
+}
+
+#tecnico-fortuna #tecnico-1 .tecnico-a img{
+  max-width: 500px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#tecnico-fortuna #tecnico-2 .tecnico-b img{
+  max-width: 500px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#tecnico-fortuna #tecnico-3 .tecnico-c img{
+  max-width: 500px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#tecnico-fortuna #tecnico-4 .tecnico-d img{
+  max-width: 500px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#tecnico-fortuna #tecnico-5 .tecnico-a img{
+  max-width: 500px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#tecnico-fortuna #tecnico-6 .tecnico-b img{
+  max-width: 500px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#tecnico-fortuna #tecnico-7 .tecnico-c img{
+  max-width: 500px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*Tecnico Scarfalietto (Scenografie)*/
+#scenografie-scarfalietto{
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  height: auto;
+  background: darkred;
+}
+
+#scenografie-scarfalietto .title{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+#scenografie-scarfalietto .title .color{
+  color: orange;
+}
+
+#tecnico-scarfalietto{
+  background: darkred;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: auto;
+}
+
+#tecnico-scarfalietto #tecnico-1 .tecnico-a img{
+  max-width: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 5.5rem;
+}
+
+#tecnico-scarfalietto #tecnico-2 .tecnico-b img{
+  max-width: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 5.5rem;
+}
+
+#tecnico-scarfalietto #tecnico-3 .tecnico-c img{
+  max-width: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 5.5rem;
+}
+
+/*Tecnico Ministro 1 (Scenografie)*/
+#scenografie-ministro{
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  height: auto;
+  background: darkred;
+}
+
+#scenografie-ministro .title{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+#scenografie-ministro .title .color{
+  color: orange;
+}
+
+#tecnico-ministro{
+  background: darkred;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: auto;
+}
+
+#tecnico-ministro #tecnico-1 .tecnico-a img{
+  max-width: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 5.5rem;
+}
+
+#tecnico-ministro #tecnico-2 .tecnico-b img{
+  max-width: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 5.5rem;
+}
+
+#tecnico-ministro #tecnico-3 .tecnico-c img{
+  max-width: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 5.5rem;
+}
+
+#tecnico-ministro #tecnico-4 .tecnico-d img{
+  max-width: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 5.5rem;
+}
+
+#tecnico-ministro #tecnico-5 .tecnico-a img{
+  max-width: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 5.5rem;
+}
+
+#tecnico-ministro #tecnico-6 .tecnico-b img{
+  max-width: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 5.5rem;
+}
+
+#tecnico-ministro #tecnico-7 .tecnico-c img{
+  max-width: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 5.5rem;
+}
+
+/*Tecnico Ministro 2 (Scenografie)*/
+#tecnico-ministro #tecnico-1 .tecnico-a img{
+  max-width: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 5.5rem;
+}
+
+#tecnico-ministro #tecnico-2 .tecnico-b img{
+  max-width: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 5.5rem;
+}
+
+#tecnico-ministro #tecnico-3 .tecnico-c img{
+  max-width: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 5.5rem;
+}
+
+#tecnico-ministro #tecnico-4 .tecnico-a img{
+  max-width: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 5.5rem;
+}
+
+#tecnico-ministro #tecnico-5 .tecnico-b img{
+  max-width: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 5.5rem;
+}
+
+#tecnico-ministro #tecnico-6 .tecnico-c img{
+  max-width: 500px;
+  padding-top: 1.5rem;
+  padding-bottom: 5.5rem;
+}
+
+/*DOCUMENTI SPETTACOLI*/
+#documenti{
+  background: darkred;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  height: auto;
+}
+
+#documenti .title{
+  display: flex;
+  justify-content: center;
+}
+
+#documenti .title h1{
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  background-color: black;
+  width: 900px;
+  border-radius: 10px;
+}
+
+#documenti .title h1 .color{
+  color: orange;
+}
+
+#documenti .scuole{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.scuole .scuole-1 img{
+  padding-top: 1rem;
+  max-width: 700px;
+}
+
+.scuole .scuole-2 img{
+  padding-top: 1rem;
+  max-width: 700px;
+}
+
+#documenti .title-2{
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+#documenti .title-2 h1{
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  background-color: black;
+  width: 700px;
+  border-radius: 10px;
+}
+
+#documenti .title-2 h1 .color{
+  color: orange;
+}
+
+#documenti .cont-bigl{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cont-bigl .cont-bigl-1 img{
+  padding-top: 1rem;
+  max-width: 700px;
+}
+
+.cont-bigl .cont-bigl-2 img{
+  padding-top: 1rem;
+  max-width: 700px;
+}
+
+.cont-bigl .cont-bigl-3 img{
+  padding-top: 1rem;
+  max-width: 700px;
+}
+
+
+#documenti .title-3{
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+#documenti .title-3 h1{
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  background-color: black;
+  width: 700px;
+  border-radius: 10px;
+}
+
+#documenti .title-3 h1 .color{
+  color: orange;
+}
+
+#documenti .min-vario{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.min-vario .min-vario-1 img{
+  padding-top: 1rem;
+  max-width: 700px;
+}
+
+.min-vario .min-vario-2 img{
+  padding-top: 1rem;
+  max-width: 700px;
+}
+
+#documenti .title-4{
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+#documenti .title-4 h1{
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  background-color: black;
+  width: 500px;
+  border-radius: 10px;
+}
+
+#documenti .title-4 h1 .color{
+  color: orange;
+}
+
+#documenti .timbro{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.timbro .timbro-1 img{
+  padding-top: 1rem;
+  max-width: 700px;
+}
+
+.timbro .timbro-2 img{
+  padding-top: 1rem;
+  max-width: 700px;
+}
+
+.timbro .timbro-3 img{
+  padding-top: 1rem;
+  max-width: 700px;
+}
+
+#documenti .title-5{
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+#documenti .title-5 h1{
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  background-color: black;
+  width: 600px;
+  border-radius: 10px;
+}
+
+#documenti .title-5 h1 .color{
+  color: orange;
+}
+
+#documenti .tesserino{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.tesserino .tesserino-1 img{
+  padding-top: 1rem;
+  max-width: 700px;
+}
+
+
+
+
+/*SubFooter*/
+#subfooter2 h3{
+  color: orange;
+  font-size: 50px;
+  background: #333;
+  height: auto;
+  text-align: center;
+  padding-bottom: 2px;
+  padding-top: 5px;
+}
+
+/*Footer*/
+#footer{
+  height: auto;
+  background: #333;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:  wrap;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+#footer h3{
+  color: orange;
+}
+
+.contatti h3{
+  padding-left: 70px;
+  padding-top: 10px;
+}
+
+.contatti{
+  font-size: 20px;
+}
+
+.contatti p{
+  padding-left: 25px;
+}
+
+.contatti p a{
+  color: white;
+}
+
+.contatti p a:hover{
+  color: orange;
+  transform: scale(1.1);
+}
+
+.contatti img{
+  max-width: 45px;
+}
+
+.contatti .facebook{
+  display: flex;
+  align-items: center;
+}
+
+.contatti .facebook a{
+  padding-left: 1rem;
+  color: white;
+}
+
+.contatti .facebook a:hover{
+  color: orange;
+  transform: scale(1.1);
+}
+
+.dedica {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 23px;
+  padding-top: 3rem;
+}
+
+.dedica .color a{
+  color: orange;
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  font-size: 23px;
+}
+
+.sviluppo{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: orange;
+  font-size: 23px;;
+}
